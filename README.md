@@ -2,6 +2,9 @@
 
 An interactive campus map system built as part of our Software Design project. This web-based tool helps users explore and navigate the university building floor-by-floor using a simple and user-friendly interface.
 
+## 🌐 Live Website
+➡️https://dannielleeee28.github.io/university-map/
+
 ## 📌 Features
 
 - 🏫 Static map interface of the university building
