@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Building Mapping System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>COLLEGE BUILDING MAPPING SYSTEM</h1>
+
+  <!-- floor picker up in the top‐left -->
+  <div class="controls">
+    <label for="floor-select">Select Floor:</label>
+    <select id="floor-select">
+      <option value="1" selected>1st Floor</option>
+      <option value="2">2nd Floor</option>
+      <option value="3">3rd Floor</option>
+      <option value="4">4th Floor</option>
+    </select>
+  </div>
+
+  <div class="map-container">
+    <img id="campus-map" src="1st-Floor.jpg" alt="Campus Map"/>
+
+    <!-- From/To UI in the top‐right -->
+    <div id="controls">
+      <div class="row">
+        <label for="start-room">From</label>
+        <select id="start-room"></select>
+      </div>
+      <div class="row swap-row">
+        <button id="swap-btn" title="Swap From/To">⇄</button>
+      </div>
+      <div class="row">
+        <label for="end-room">To</label>
+        <select id="end-room"></select>
+      </div>
+      <button id="find-btn" onclick="handlePathSearch()" disabled>Find Path</button>
+      <button id="reset-btn" onclick="resetPath()">Reset</button>
+    </div>
+  </div>
+
+  <script src="roomData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
